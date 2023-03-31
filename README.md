@@ -1,5 +1,5 @@
 # sample-devops-pipeline (created by Kazuyuki Fukaya)
-Sample of a DevOps pipeline
+This is a sample project for a DevOps pipeline
 
 ## Challenge Statement
 Company A is a Tech company that develops and operates many web applications. The

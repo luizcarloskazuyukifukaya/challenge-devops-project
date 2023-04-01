@@ -101,26 +101,6 @@ and clone the lab code repository to it.
     
 2. Disable Organization Policy (Disable global load balancing) for the target project 
 
-<!---
-  ```shell
-    gcloud resource-manager org-policies disable-enforce \
-      --project $GOOGLE_CLOUD_PROJECT \
-      constraints/compute.disableGlobalLoadBalancing
-   ```
-   
-   (note) This command will disable the Organization Policy enforcement of the target project only.
-   
-   Output (do not copy)
-   
-   ```output
-   booleanPolicy: {}
-   constraint: constraints/compute.disableGlobalLoadBalancing
-   etag: CMaonqEGEIjYi2Y=
-   updateTime: '2023-04-01T02:17:42.214101Z'
-   ```
-   
-3. Allow Protocol Forwarding Based on type of IP Address
---->
    ```shell
     gcloud resource-manager org-policies set-policy  \
     --project=$GOOGLE_CLOUD_PROJECT ./jenkins/orgpolicy.json
@@ -290,22 +270,8 @@ CI/CD pipleline.
 
 1. Add the official stable repository.
 
-  <!---
-  Alternative:
-  https://artifacthub.io/packages/helm/jenkinsci/jenkins
-
-  ```shell
-    ./helm repo add stable https://kubernetes-charts.storage.googleapis.com
-    ```
-
-    ```shell
-    ./helm repo rm stable
-    ./helm repo add stable https://charts.helm.sh/stable
-    ```
-  --->
-
-  Alternative:
-  https://artifacthub.io/packages/helm/jenkinsci/jenkins
+    Alternative:
+    https://artifacthub.io/packages/helm/jenkinsci/jenkins
 
     ```shell
     ./helm repo add jenkins https://charts.jenkins.io

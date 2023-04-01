@@ -1,0 +1,13 @@
+{
+  "constraint": "constraints/compute.restrictLoadBalancerCreationForTypes",
+  "listPolicy": {
+    "allowedValues": [
+      "INTERNAL_TCP_UDP",
+      "INTERNAL_HTTP_HTTPS",
+      "EXTERNAL_NETWORK_TCP_UDP",
+      "EXTERNAL_TCP_PROXY",
+      "EXTERNAL_SSL_PROXY",
+      "EXTERNAL_HTTP_HTTPS"
+    ]
+  }
+}

@@ -4,7 +4,8 @@ Infrastructure used for the DevOps pipeline. <br/>
 
 ## Jenkins (Continuous Integration)
 - Jenkins on Google Kubernetes Engine (GKE)
-https://github.com/luizcarloskazuyukifukaya/jenkinsongke
+
+(note) Refer to the subfolder named jenkins-on-k8s on the details of the installation.
 
 ## Ansible (Continuous Deployment)
 - Ansible on Google Kubernetes Engine (GKE)
